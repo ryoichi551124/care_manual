@@ -1,0 +1,4 @@
+*.sqlit
+*.sqlite-journal
+
+

@@ -1,0 +1,575 @@
+@charset "UTF-8";
+
+/*--------共通部分--------*/
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.5;
+    color: #2d8fdd;
+    min-height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+p {
+    font-size: 1.2em;
+}
+
+/*--------header--------*/
+.page-header {
+    background-color: #0bd;
+    width: 100%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header a {
+    color: white;
+}
+
+.header-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.header-name {
+    margin-top: 24px;
+
+    color: #fff;
+}
+.main-nav {
+    display: flex;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+
+
+/*--------title--------*/
+.top-title {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
+.page-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d8fdd;
+}
+.top-title p {
+    color: #2d8fdd;
+}
+.home {
+    font-weight: bold;
+}
+
+/*--------home--------*/
+.home-content {
+    text-align: center;
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+/*--------main--------*/
+.main {
+    width: 72%;
+}
+
+/*--------main-header--------*/
+.main-title {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+/*--------main-description--------*/
+
+
+/*-------button--------*/
+.main-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+    margin-top: 20px;
+}
+.button {
+    margin-top: 0px;
+}
+.button a{
+    display: block;
+    font-size: 1.2rem;
+    background: #0bd;
+    color: white;
+    border-radius: 5px;
+    padding: 18px 32px;
+    width: 220px;
+    margin-top: 20px;
+}
+.button a:hover {
+    background: #2d8fdd;
+}
+button:hover {
+    background: #2d8fdd;
+}
+
+/*--------side--------*/
+aside {
+    width: 28%;
+    height: 390px;
+    border: solid 3px #0bd;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.side-header {
+    padding: 0;
+}
+.sub-title {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    color: #2d8fdd;
+}
+.side-description {
+    color: #2d8fdd;
+}
+.side-menu {
+    padding: 0;
+    position: relative;
+    width: 70%;
+    margin: 20px auto;
+}
+.side-menu li {
+    color: #2d8fdd;
+    /*border-bottom: solid 2px #0bd;*/
+    border-radius: 5px;
+    background: #f1f8ff;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding: 0.5em;
+    list-style-type: none!important;
+}
+.side-menu a {
+    display: block;
+    color: #2d8fdd;
+}
+
+/*--------add-side--------*/
+.add-side {
+    width: 28%;
+}
+.add-side .button a {
+    margin: 50px auto;
+}
+.add-side aside {
+    width: 100%;
+}
+.add-button a {
+    width: 180px;
+    border-radius: 10px;
+}
+
+/*--------footer--------*/
+footer {
+    background-color:  #0bd;
+    text-align: center;
+    padding: 26px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+/*--------select--------*/
+.select-block {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    color: #2d8fdd;
+}
+.select-block h2 {
+    margin-top: 40px;
+}
+
+
+/*--------list--------*/
+.list {
+    margin: 40px auto;
+    width: 50%;
+}
+.table-list{
+    width: 100%;
+    border-spacing: 15px;
+}
+.table-list td {
+    padding: 10px;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    background-color: #f1f8ff;
+    display: block;
+}
+.table-list a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #2d8fdd;
+}
+.list-style {
+    background: #f1f8ff;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    width: 100%;
+    margin: 5px auto;
+}
+.list-style p {
+    font-size: 1.0rem;
+}
+
+/*--------hidden-box--------*/
+.hidden-box input {
+    display: none;
+}
+.hidden-box label {
+    transition: .3s;
+}
+.hidden-box label:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f107';
+    transition: 1.0s;
+}
+.hidden-box input:checked ~ label:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f106";
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.hidden-box .hidden-show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.hidden-box input:checked ~ .hidden-show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
+
+/*--------selected--------*/
+.select-block-edit {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    color: #2d8fdd;
+}
+.select-block-edit h2 {
+    margin-top: 40px;
+}
+.selected {
+    display: flex;
+    width: 100%;
+}
+.selected-main {
+    width: 100%;
+    margin: 10px 20px;
+    color: #2d8fdd;
+}
+.selected-main input {
+    width: 100%;
+    color: #2d8fdd;
+}
+.selected-edit {
+    width: 8%;
+    margin: 10px 0px;
+    padding: 10px 0;
+    background: none;
+}
+.selected-edit img {
+    width: 20px;
+    height: 20px;
+}
+.selected-add {
+    width: 8%;
+    margin: 20px auto 100px auto;
+}
+
+
+/*--------customer-form--------*/
+.create {
+    margin: 0 auto;
+    width: 80%;
+}
+.customer-form {
+    margin: 30px auto;
+    border: solid 5px #0bd;
+    border-radius: 20px;
+    width: 50%;
+    height: 430px;
+    background: #f1f8ff;
+}
+.customer-form h3 {
+    margin-top: 30px;
+}
+.form-box {
+    border: #0bd;
+}
+.customer-form input {
+    height: 60px;
+    width: 200px;
+    border: solid 3px #0bd;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background: white;
+    color: #2d8fdd;
+}
+.submit {
+    color: white;
+    background: #0bd;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.button-create {
+    margin-top: 60px;
+}
+.button-create a {
+    margin: 0 auto 20px auto;
+    width: 180px;
+}
+.delete {
+    margin-top: 30px;
+    background: none;
+}
+.error {
+    margin-bottom: -15px;
+}
+
+/*--------service-form--------*/
+.service-form {
+    margin: 30px auto;
+}
+.service-form textarea {
+    width: 80%;
+    height: 220px;
+    text-align: left;
+    border: solid 3px #0bd;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: #2d8fdd;
+    background: white;
+}
+.service-form .submit {
+    margin-top: 0px;
+}
+.button-service-create{
+    margin-top: 30px;
+}
+.button-selected a {
+    margin: 20px auto;
+}
+.back {
+    margin-top: 100px;
+}
+.back a {
+    margin: 0 auto;
+    width: 70px;
+    padding: 8px 6px;
+    border-radius: 10px;
+}
+
+
+/*--------auth--------*/
+.auth-container {
+    margin: 80px auto;
+    width: 50%;
+    height: 100%;
+}
+.auth-container h2 {
+    font-size: 1.7em;
+}
+.login-description {
+    font-size: 0.95em;
+    margin-top: 10px;
+}
+.auth-login {
+    height: 330px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: solid 4px #2d8fdd;
+    border-radius: 10px;
+    background: #f1f8ff;
+}
+.auth-login form {
+    margin-top: 30px;
+}
+.input-title {
+    display: block;
+    margin: 20px auto 10px auto;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.auth-input {
+    padding: 10px 20px;
+    width: 60%;
+    border: solid 2px #2d8fdd;
+    border-radius: 10px;
+    color: #2d8fdd;
+}
+.login-button {
+    margin-top: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    background: #0bd;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+.login-button:hover {
+
+    background: #2d8fdd;
+}
+
+/*--------select-category--------*/
+.select-category {
+    margin: 30px auto;
+    background-color: #f1f8ff;
+    border-radius: 20px;
+    width: 60%;
+}
+.select-category a {
+    margin: 30px auto;
+}
+
+
+/*--------モバイル版--------*/
+@media (max-width: 600px) {
+    p {
+        font-size: 1.0em;
+    }
+    /*--------header--------*/
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-nav li {
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    /*--------home--------*/
+    .main {
+        width: 100%;
+    }
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        width: 90%;
+    }
+
+    /*--------button--------*/
+    .main-button {
+        flex-direction: column;
+        align-items: center;
+    }
+    .button p{
+        font-size: 1.2rem;
+        border-radius: 5px;
+        padding: 12px 26px;
+        width: 190px;
+        margin-top: 20px;
+    }
+
+    /*--------side--------*/
+    aside {
+        width: 80%;
+        margin-top: 40px;
+    }
+    .side-menu {
+        width: 68%;
+    }
+    .add-side {
+        width: 80%;
+        margin-top: 0px;
+    }
+
+    /*--------select-block--------*/
+    .select-block {
+        width: 80%;
+    }
+    .select-category {
+        width: 100%;
+    }
+
+    /*--------customer_list--------*/
+    .list {
+        width: 80%;
+    }
+    .selected {
+        margin-top: 10px;
+        width: 100%;
+        display: block;
+    }
+    .selected-main {
+        width: 100%;
+        margin: 0 auto;
+        border: solid 2px #2d8fdd;
+    }
+    .selected-edit {
+        margin: 10px auto 20px auto;
+        display: inline-block;
+        width: 20%;
+        padding: 0.1em 0.1em;
+    }
+    .selected-add {
+        margin: 0px auto;
+        width: 20%;
+    }
+
+    /*--------form--------*/
+    .customer-form {
+        width: 100%;
+        height: 400px;
+    }
+    .customer-form textarea {
+        margin-bottom: -15apx;
+    }
+    .submit {
+        margin-top: 0px;
+    }
+
+    /*--------auth--------*/
+    .auth-container {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .auth-login {
+        margin: 30px auto;
+    }
+
+}

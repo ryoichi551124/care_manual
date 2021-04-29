@@ -472,13 +472,22 @@ footer p {
         font-size: 1.0em;
     }
     /*--------header--------*/
+    .header-title {
+        margin: 5px 0;
+    }
+    .page-header {
+        height: 90px;
+    }
     .header {
         flex-direction: column;
         align-items: center;
     }
     .main-nav li {
-        margin: 0 auto;
+        margin: -15px auto;
         padding: 0 10px;
+    }
+    .main-nav {
+        font-size: 0.9em;
     }
 
     /*--------home--------*/
